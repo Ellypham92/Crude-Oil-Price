@@ -40,3 +40,8 @@ We also explore the relationship of crude oil price against crude oil production
 
 <img width="610" alt="Screen Shot 2023-05-05 at 9 17 45 PM" src="https://user-images.githubusercontent.com/64395120/236593408-506afac2-e068-4915-adad-897c44e2aaff.png">
 
+Stationary: 
+In this section, we observe the stationarity of the data by using the statistical and plots test. The main method is to compute the auto correlation function to determine whether the oil crude price is stationary or not. In the graph, we found out that the pattern of ACF slowly decreases which indicates the non-stationarity of the data. Therefore, we decided to convert the oil crude data to stationary data. Log transformation and differencing are the two major methodologies being used for the conversion.
+
+<img width="745" alt="Screen Shot 2023-05-05 at 9 18 22 PM" src="https://user-images.githubusercontent.com/64395120/236593442-ee95927d-6da1-4100-807f-81bf83f29f6c.png">
+
