@@ -10,4 +10,4 @@
 #### ** [View visualization in tableau](
 
 ### :globe_with_meridians: Context
-The World Happiness Report is a publication of the Sustainable Development Solutions Network, powered by the Gallup World Poll Data. The data used in the analysis is collected from the year 2015 to 2022; contains 175 countries ranking by happiness score on a scale from 1 to 8. There is no fixed formula to determine what makes a country happy. However, in recent years, happiness has become a strongest indicator to judge a country's social progress. The happiness indicator has been getting more attention from people accross the globe. 
+The price of oil, or the oil price, generally refers to the spot price of a barrel (159 liters) of benchmark crude oil—a reference price for buyers and sellers of crude oil such as West Texas Intermediate (WTI), Brent Crude, Dubai Crude. We hypothesize that the oil price can be modeled as a weighted lagged moving average of historical oil prices. SPY index and Dollar Index are used as the macroeconomic indicators. Oil production is used as an indicator of oil supply. 
