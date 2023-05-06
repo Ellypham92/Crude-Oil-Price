@@ -1,5 +1,5 @@
 <div id="header" align="center">
-<img width="850" alt="image" src="https://i.ytimg.com/vi/WtLAgUovCIw/maxresdefault.jpg">
+<img width="600" alt="image" src="https://i.ytimg.com/vi/WtLAgUovCIw/maxresdefault.jpg">
 </div>
 
 <h3 id="header" align="center">
