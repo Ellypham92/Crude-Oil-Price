@@ -74,4 +74,4 @@ We looked for candidates to build ARIMA models in the next section. With the fir
 <img width="715" alt="Screen Shot 2023-05-05 at 9 24 44 PM" src="https://user-images.githubusercontent.com/64395120/236593733-cc9b99ff-c9c4-4b66-bdbb-b98b5ee89492.png">
 
 
-
+We can see that the first model ARIMA(0,1,1) and the third model ARIMA(1,1,3) have the data points above the threshold, hence we fail to reject the null hypothesis. However, since the AIC and BIC values of the first model ARIMA(0,1,1) are slightly smaller than the third model and the model is simpler, it is recommended to use the first model for production. The algebra expression of our deployment model is `xt` = `wt` +0.4583`wt`− 1. 
