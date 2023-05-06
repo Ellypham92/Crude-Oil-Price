@@ -35,4 +35,5 @@ The scatter plot analysis shows that there is a significant negative correlation
 
 <img width="746" alt="Screen Shot 2023-05-05 at 9 16 21 PM" src="https://user-images.githubusercontent.com/64395120/236593344-349fc483-9a2a-4198-acb1-4345c9889b36.png">
 
-
+#### Linear Regression Model
+We also explore the relationship of crude oil price against crude oil production, SP index 500,  and dollar index using linear regression. The p-values of index 500,  and dollar index are significant, hence we can conclude that there seems to be a correlation between crude oil price and index 500, dollar index. 
