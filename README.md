@@ -13,3 +13,5 @@ The price of oil, or the oil price, generally refers to the spot price of a barr
 - Oil production is used as an indicator of oil supply
 
 We can use it to forecast the short-term oil price which would be useful for the government and companies for planning the budget for the fiscal year.
+
+### Data Processing
