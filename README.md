@@ -7,7 +7,5 @@
 </h3>
 
 
-#### ** [View visualization in tableau](
-
 ### :globe_with_meridians: Context
 The price of oil, or the oil price, generally refers to the spot price of a barrel (159 liters) of benchmark crude oil—a reference price for buyers and sellers of crude oil such as West Texas Intermediate (WTI), Brent Crude, Dubai Crude. We hypothesize that the oil price can be modeled as a weighted lagged moving average of historical oil prices. SPY index and Dollar Index are used as the macroeconomic indicators. Oil production is used as an indicator of oil supply. 
