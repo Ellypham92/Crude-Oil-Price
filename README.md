@@ -14,6 +14,9 @@ The price of oil, or the oil price, generally refers to the spot price of a barr
 
 We can use it to forecast the short-term oil price which would be useful for the government and companies for planning the budget for the fiscal year.
 
+<img width="719" alt="Screen Shot 2023-05-05 at 9 19 30 PM" src="https://user-images.githubusercontent.com/64395120/236593489-ec5aa662-1bd5-47fd-a201-cb1cca1b7cff.png">
+
+
 ### Data Processing
 <img width="800" alt="image" alt="Screen Shot 2023-05-05 at 9 07 42 PM" src="https://user-images.githubusercontent.com/64395120/236593092-ccb3ad55-5bbb-44aa-ba39-370effc0d102.png">
 Four data sets are used for this analysis. The data is collected from 2000 to 2022. The files used are as follows and contain the following information:
@@ -44,4 +47,31 @@ Stationary:
 In this section, we observe the stationarity of the data by using the statistical and plots test. The main method is to compute the auto correlation function to determine whether the oil crude price is stationary or not. In the graph, we found out that the pattern of ACF slowly decreases which indicates the non-stationarity of the data. Therefore, we decided to convert the oil crude data to stationary data. Log transformation and differencing are the two major methodologies being used for the conversion.
 
 <img width="745" alt="Screen Shot 2023-05-05 at 9 18 22 PM" src="https://user-images.githubusercontent.com/64395120/236593442-ee95927d-6da1-4100-807f-81bf83f29f6c.png">
+
+By applying Log Transformation, we addressed the skewness in the oil crude price data which made it conform more closely to normal distribution. By using the first differencing method on the log data, the data is stationary, and the pattern of the transformed oil price data is more easily interpretable. We learned about the characteristics of oil crude price and their nature in the plot. It highlights the oil crude price is cyclical since there is a repeating up and down as well as periodic peaks and deep patterns.
+
+<img width="730" alt="Screen Shot 2023-05-05 at 9 20 16 PM" src="https://user-images.githubusercontent.com/64395120/236593507-1a721f99-98b7-404c-85aa-fc5f84edbc5d.png">
+
+Seasonality: 
+The seasonality plot suggests that crude oil price tends to go down slightly towards the end of the year, however it does not have the seasonality components. 
+
+<img width="717" alt="Screen Shot 2023-05-05 at 9 21 37 PM" src="https://user-images.githubusercontent.com/64395120/236593567-7fb6ddd3-c8ed-4b19-89c8-8b139eef7ca8.png">
+
+<img width="710" alt="Screen Shot 2023-05-05 at 9 22 08 PM" src="https://user-images.githubusercontent.com/64395120/236593582-84416ada-8ab3-4528-8fb3-ca8a8ce336a9.png">
+
+MODELING
+We looked for candidates to build ARIMA models in the next section. With the first differencing data, the extended auto correlation matrix allows us to select the order p and q of an ARIMA model. The proposed ARIMA model candidates are:
+
+- ARIMA(0,1,1) named as the first model 
+<img width="760" alt="Screen Shot 2023-05-05 at 9 23 46 PM" src="https://user-images.githubusercontent.com/64395120/236593660-70fe3507-dad2-4192-bd20-1631151b1cf7.png">
+
+- ARIMA(1,1,1) named as the second model
+
+<img width="716" alt="Screen Shot 2023-05-05 at 9 24 17 PM" src="https://user-images.githubusercontent.com/64395120/236593689-b1b5f418-0524-4595-a816-763d2228ef3c.png">
+
+- ARIMA(1,1,3) named as the third model
+
+<img width="715" alt="Screen Shot 2023-05-05 at 9 24 44 PM" src="https://user-images.githubusercontent.com/64395120/236593733-cc9b99ff-c9c4-4b66-bdbb-b98b5ee89492.png">
+
+
 
