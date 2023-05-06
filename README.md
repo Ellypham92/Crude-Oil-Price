@@ -1,5 +1,5 @@
 <div id="header" align="center">
-<img width="600" alt="image" src="https://i.ytimg.com/vi/WtLAgUovCIw/maxresdefault.jpg">
+<img width="600" alt="image" src="https://cdn.litemarkets.com/cache/uploads/blog_post/blog_posts/oil-trading/oil-trading.jpg?q=75&w=1000&s=e56faa954dbd45df7b87435c283d506a">
 </div>
 
 <h3 id="header" align="center">
