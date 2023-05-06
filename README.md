@@ -12,4 +12,4 @@ The price of oil, or the oil price, generally refers to the spot price of a barr
 - SPY index and Dollar Index are used as the macroeconomic indicators
 - Oil production is used as an indicator of oil supply
 
-If there is significant evidence that the hypothesis is true, we can use it to forecast the short-term oil price which would be useful for the government and companies for planning the budget for the fiscal year.
+We can use it to forecast the short-term oil price which would be useful for the government and companies for planning the budget for the fiscal year.
