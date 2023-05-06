@@ -30,3 +30,9 @@ Once the data is plotted, we see the general trend of time series data on crude 
 
 <img width="844" alt="Screen Shot 2023-05-05 at 9 13 56 PM" src="https://user-images.githubusercontent.com/64395120/236593231-3e500d37-d9c3-4d51-81b2-6f3fdc463956.png">
 
+The scatter plot analysis shows that there is a significant negative correlation between price and dollar index. The US is one of the largest producer of oil. When the US dollar value increases, the less amount of US dollar is needed to buy a barrel of oil and vice versa. 
+
+
+<img width="746" alt="Screen Shot 2023-05-05 at 9 16 21 PM" src="https://user-images.githubusercontent.com/64395120/236593344-349fc483-9a2a-4198-acb1-4345c9889b36.png">
+
+
