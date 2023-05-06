@@ -17,10 +17,10 @@ We can use it to forecast the short-term oil price which would be useful for the
 ### Data Processing
 <img width="800" alt="image" alt="Screen Shot 2023-05-05 at 9 07 42 PM" src="https://user-images.githubusercontent.com/64395120/236593092-ccb3ad55-5bbb-44aa-ba39-370effc0d102.png">
 Four data sets are used for this analysis. The data is collected from 2000 to 2022. The files used are as follows and contain the following information: 
-•	OilPrice.xls: U.S Crude Oil Purchase Price (Dollars per Barrel)
-•	OilProduction.xls: U.S. Field Production of Crude Oil (Thousand Barrels per Day)
-•	S&P500_Index.xlsx: S&P 500 Index
-•	DollarIndex.xlsx Dollar Index
+- OilPrice.xls: U.S Crude Oil Purchase Price (Dollars per Barrel)
+- OilProduction.xls: U.S. Field Production of Crude Oil (Thousand Barrels per Day)
+- S&P500_Index.xlsx: S&P 500 Index
+- DollarIndex.xlsx Dollar Index
 
 The data was loaded into R and converted into monthly time series for analysis. There are 272 rows and no missing observations were detected:
 
