@@ -2,8 +2,8 @@
 <img width="850" alt="image" src="https://i.ytimg.com/vi/WtLAgUovCIw/maxresdefault.jpg">
 </div>
 
-<h3 id="header" align="center">
- :notes: Crude Oil Prediction
+## <h3 id="header" align="center">
+ Crude Oil Prediction
 </h3>
 
 
