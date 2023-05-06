@@ -14,7 +14,7 @@ The price of oil, or the oil price, generally refers to the spot price of a barr
 
 We can use it to forecast the short-term oil price which would be useful for the government and companies for planning the budget for the fiscal year.
 
-<img width="750" alt="Screen Shot 2023-05-05 at 9 19 30 PM" src="https://user-images.githubusercontent.com/64395120/236593489-ec5aa662-1bd5-47fd-a201-cb1cca1b7cff.png">
+<img width="850" alt="Screen Shot 2023-05-05 at 9 19 30 PM" src="https://user-images.githubusercontent.com/64395120/236593489-ec5aa662-1bd5-47fd-a201-cb1cca1b7cff.png">
 
 
 ### :hourglass: Data Processing
