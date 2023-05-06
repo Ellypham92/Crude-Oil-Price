@@ -75,3 +75,11 @@ We looked for candidates to build ARIMA models in the next section. With the fir
 
 
 We can see that the first model ARIMA(0,1,1) and the third model ARIMA(1,1,3) have the data points above the threshold, hence we fail to reject the null hypothesis. However, since the AIC and BIC values of the first model ARIMA(0,1,1) are slightly smaller than the third model and the model is simpler, it is recommended to use the first model for production. The algebra expression of our deployment model is `xt` = `wt` +0.4583`wt`− 1. 
+
+## Oil Crude Price Forecasting and 36-month Prediction
+
+<img width="776" alt="Screen Shot 2023-05-05 at 9 27 11 PM" src="https://user-images.githubusercontent.com/64395120/236593864-1f68a1ea-c7a4-49c4-bcee-14bf3a60af9b.png">
+
+Based on our forecasting, the crude oil price will increase gradually in the next 36 months. To better analyzing the crude oil price more accurately, there might be additional analyses needed in the future work. 
+
+
