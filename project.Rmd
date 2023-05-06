@@ -1,0 +1,120 @@
+---
+title: "project"
+author: "Team 03"
+date: '2022-11-21'
+output: word_document
+---
+
+```{r}
+#import the data in the folder 
+temp = list.files(pattern="*.xlsx")
+myfiles = lapply(temp, read_excel)
+
+#assign the name to the each file
+oil_price = myfiles[[1]]
+oil_price = data.frame(oil_price)
+
+oil_field_production = myfiles[[2]]
+oil_field_production = data.frame(oil_field_production)
+
+oil_sp500 = myfiles[[3]]
+oil_sp500=data.frame(oil_sp500)
+
+dollar_index = myfiles[[4]]
+dollar_index=data.frame(dollar_index)
+
+#format data for joining 
+oil_price$Date = format(oil_price$Date, format="%Y-%m")
+oil_field_production$Date = format(oil_field_production$Date, format="%Y-%m")
+oil_sp500$Date = format(oil_sp500$Date, format="%Y-%m")
+dollar_index$Date = format(dollar_index$Date, format="%Y-%m")
+```
+
+
+
+```{r}
+#change column name
+colnames(oil_price)[1] = "date"
+colnames(oil_price)[2] = "price"
+head(oil_price)
+
+colnames(oil_field_production)[1] = "date"
+colnames(oil_field_production)[2] = "production"
+head(oil_field_production)
+
+colnames(oil_sp500)[1] = "date"
+colnames(oil_sp500)[2] = "sp_index"
+head(oil_sp500)
+
+colnames(dollar_index)[1] = "date"
+colnames(dollar_index)[2] = "dollar_index"
+head(dollar_index)
+```
+
+
+
+```{r}
+library(sqldf)
+## inner join
+data <- sqldf("SELECT *
+              FROM oil_price
+              JOIN oil_field_production USING(date)")
+
+data <- sqldf("SELECT *
+              FROM data
+              JOIN oil_sp500 USING(date)")
+
+data <- sqldf("SELECT *
+              FROM data
+              JOIN dollar_index USING(date)")
+
+data = subset(data, date >= "2000-01") #only use data from 01/2000
+data
+```
+
+
+```{r}
+plot(data$price, col=4, lwd=2, type = 'l')
+#check the stationarity 
+acf(data$price, 200)
+```
+
+
+
+```{r}
+library(astsa)
+#stationarize data by applying difference
+diff_data = diff(log(oil_price$price))
+plot( diff_data, col=4, lwd=2, type = 'l')
+acf2(diff_data)
+```
+```{r}
+library(psych)
+pairs.panels(data[,-1])
+```
+
+```{r}
+fit = lm(price~ production + sp_index +  dollar_index, data, na.action=NULL)
+summary(fit)
+```
+```{r}
+library(TSA); library(MASS)
+library(FitAR); library(tseries)
+library(timeSeries); library(fGarch)
+library(forecast); library(reporttools)
+```
+
+```{r}
+oilspot.ts1<-ts(data[,2],start=c(2000,12),frequency=12)
+plot(oilspot.ts1)
+summary(oilspot.ts1)
+```
+
+
+
+```{r}
+realised.ts1<-diff(log(ts(data[,2],start=c(2000,12),frequency=12)))
+realised.ts1
+plot(realised.ts1)
+```
+
